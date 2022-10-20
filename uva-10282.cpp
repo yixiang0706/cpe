@@ -26,10 +26,10 @@ int main() {
 
 	string que;
 	while (getline(cin, que) && que != "") {
-		if (Map.find(que) == Map.end())
-			cout << "eh" << endl;
+		if (Map[que] != "")
+			cout << Map[que] << endl;
 		else
-			cout << Map.find(que)->second << endl;
+			cout << "eh" << endl;
 	}
 	return 0;
 }
